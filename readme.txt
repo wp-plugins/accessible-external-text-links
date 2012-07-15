@@ -2,8 +2,8 @@
 Contributors: Myshock
 Tags: accessibility, links
 Requires at least: 3.3.1
-Tested up to: 3.3.1
-Stable tag: 1.0
+Tested up to: 3.4.1
+Stable tag: 1.1
 
 I created this plugin to make external text links more accessible to people with disabilities
 
@@ -33,3 +33,5 @@ Actually not, and it's not planned for the moment.
 = 1.0 [2012-01-22] =
 * Initial release
 
+= 1.0 [2012-07-15] =
+* Fixed not working with Internet Explorer 8

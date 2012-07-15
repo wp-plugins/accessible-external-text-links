@@ -3,7 +3,7 @@
 Plugin Name: Accessible External Text Links
 Plugin URI: http://www.delislejm.com/plugins-wordpress/
 Description: I created this plugin to make external text links more accessible to people with disabilities by displaying an image with an alternative that informs the user that the link will open in a new window. Thanx to Romain Gervois for help.
-Version: 1.0
+Version: 1.1
 Author: Jean-Marc Delisle
 Author URI: http://www.delislejm.com
 */
@@ -18,7 +18,8 @@ function jmd_generate_output(){
 	
 	$img_src= plugins_url('/images/external_link.gif', __FILE__);
 	
-	echo '<script>if(window.addEventListener){function fire(event){externalLink(\''.$img_src.'\',\''.addslashes(get_option('jmd_external_links_alternative')).'\')}window.addEventListener("DOMContentLoaded", fire, false);}</script>';
+echo '<script>if(window.addEventListener){function fire(event){externalLink(\''.$img_src.'\',\''.addslashes(get_option('jmd_external_links_alternative')).'\')}window.addEventListener("DOMContentLoaded", fire, false);}
+	else if (window.attachEvent) {function fire(event){externalLink(\''.$img_src.'\',\''.addslashes(get_option('jmd_external_links_alternative')).'\')}window.attachEvent("onload", fire, false);}</script>';
 }
 
 add_action('wp_footer', 'jmd_generate_output');//outputs script in footer

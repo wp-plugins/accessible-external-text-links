@@ -1,7 +1,7 @@
 function externalLinkEvent(event) {
 			// Opens link in a new window
 			window.open(this.href);
-			event.preventDefault();
+			event.preventDefault();		
 		}		
 
 		function externalLink(imgsrc,altext) {
@@ -10,7 +10,7 @@ function externalLinkEvent(event) {
 
 
 			for( i = 0; i < pagelinks.length; i++) {
-				linkclass = pagelinks[i].getAttribute('class');
+				var linkclass = pagelinks[i].getAttribute('class');
 				if(linkclass == "external") {
 					//stuff to do if this is an external link
 					var linktext = pagelinks[i].firstChild.nodeValue; 
@@ -19,7 +19,14 @@ function externalLinkEvent(event) {
 					extimg.setAttribute('alt', altext);
 					extimg.setAttribute('title', altext);
 					document.getElementsByTagName('a')[i].appendChild(extimg);
+					if (window.addEventListener){
 					pagelinks[i].addEventListener('click', externalLinkEvent, false);
+					//ie8 fix
+					} else if (window.attachEvent){											
+						var theURL = pagelinks[i].getAttribute('href');
+						alert(theURL);
+						pagelinks[i].attachEvent('onclick', function(){window.open(theURL); return false;})
+					}					
 
 				}
 				
