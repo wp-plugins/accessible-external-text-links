@@ -33,5 +33,5 @@ Actually not, and it's not planned for the moment.
 = 1.0 [2012-01-22] =
 * Initial release
 
-= 1.0 [2012-07-15] =
+= 1.1 [2012-07-15] =
 * Fixed not working with Internet Explorer 8
