@@ -3,7 +3,7 @@
 Plugin Name: Accessible External Text Links
 Plugin URI: http://www.delislejm.com/plugins-wordpress/
 Description: I created this plugin to make external text links more accessible to people with disabilities by displaying an image with an alternative that informs the user that the link will open in a new window. Thanx to Romain Gervois for help.
-Version: 1.2
+Version: 1.1
 Author: Jean-Marc Delisle
 Author URI: http://www.delislejm.com
 */

@@ -3,7 +3,7 @@ Contributors: Myshock
 Tags: accessibility, links
 Requires at least: 3.3.1
 Tested up to: 3.4.1
-Stable tag: 1.1
+Stable tag: 1.2
 
 I created this plugin to make external text links more accessible to people with disabilities
 
@@ -35,6 +35,3 @@ Actually not, and it's not planned for the moment.
 
 = 1.1 [2012-07-15] =
 * Fixed not working with Internet Explorer 8
-
-= 1.2 [2013-10-20] =
-* Added inline style on img tag so image displays correctly right to external link
