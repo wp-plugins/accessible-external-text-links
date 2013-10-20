@@ -18,6 +18,7 @@ function externalLinkEvent(event) {
 					extimg.setAttribute('src', imgsrc);
 					extimg.setAttribute('alt', altext);
 					extimg.setAttribute('title', altext);
+					extimg.setAttribute('style', 'display:inline-block;');
 					document.getElementsByTagName('a')[i].appendChild(extimg);
 					if (window.addEventListener){
 					pagelinks[i].addEventListener('click', externalLinkEvent, false);

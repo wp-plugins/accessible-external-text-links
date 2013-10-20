@@ -35,3 +35,6 @@ Actually not, and it's not planned for the moment.
 
 = 1.1 [2012-07-15] =
 * Fixed not working with Internet Explorer 8
+
+= 1.2 [2013-10-20] =
+* Added inline style on img tag so image displays correctly right to external link
