@@ -3,7 +3,7 @@ Contributors: Myshock
 Tags: accessibility, links
 Requires at least: 3.3.1
 Tested up to: 3.4.1
-Stable tag: 1.3
+Stable tag: 1.4
 
 I created this plugin to make external text links more accessible to people with disabilities
 
@@ -46,3 +46,6 @@ Actually not, and it's not planned for the moment.
 = 1.3 [2013-10-20] =
 * Modified alternative text input width
 * Added screenshot in readme.txt
+
+= 1.4 [2013-10-20] =
+* fixed JavaScript error
