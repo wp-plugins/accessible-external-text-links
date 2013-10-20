@@ -3,7 +3,7 @@
 Plugin Name: Accessible External Text Links
 Plugin URI: http://www.delislejm.com/plugins-wordpress/
 Description: I created this plugin to make external text links more accessible to people with disabilities by displaying an image with an alternative that informs the user that the link will open in a new window. Thanx to Romain Gervois for help.
-Version: 1.1
+Version: 1.3
 Author: Jean-Marc Delisle
 Author URI: http://www.delislejm.com
 */
@@ -78,7 +78,7 @@ function jmd_settings_page() {
 
 
 	<label for="<?php echo $data_field_name; ?>"><?php _e("Image alternative text (alt attribute content):", 'config-menu' ); ?></label>
-		<input type="text" id="<?php echo $data_field_name; ?>" name="<?php echo $data_field_name; ?>" value="<?php echo $opt_val; ?>" size="20"/>
+		<input type="text" id="<?php echo $data_field_name; ?>" name="<?php echo $data_field_name; ?>" value="<?php echo $opt_val; ?>" size="40"/>
 	</p>
 	<hr />
 	<p class="submit">
