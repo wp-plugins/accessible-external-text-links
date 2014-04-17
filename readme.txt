@@ -2,7 +2,7 @@
 Contributors: Myshock
 Tags: accessibility, links
 Requires at least: 3.3.1
-Tested up to: 3.4.1
+Tested up to: 3.9
 Stable tag: 1.4
 
 I created this plugin to make external text links more accessible to people with disabilities
